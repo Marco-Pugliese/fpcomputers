@@ -9,6 +9,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import MyLogo from "./MyLogo";
+// import MyLogo from "./MyLogo";
 
 const MyHeader = () => {
   return (
