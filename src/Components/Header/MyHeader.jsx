@@ -35,10 +35,12 @@ const MyHeader = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto me-4">
-              <Nav.Link>Home</Nav.Link>
-              <Nav.Link>Servizi</Nav.Link>
-
-              <NavDropdown title="Info & Contatti" id="basic-nav-dropdown">
+              <Nav.Link className="text-center">Home</Nav.Link>
+              <NavDropdown
+                title="Info & Contatti"
+                id="basic-nav-dropdown"
+                className="text-center"
+              >
                 <span className="d-flex justify-content-center align-items-center">
                   <a
                     href={whatsapp}
@@ -83,6 +85,7 @@ const MyHeader = () => {
                   </a>
                 </span>
               </NavDropdown>
+              <Nav.Link className="text-center">Servizi</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
