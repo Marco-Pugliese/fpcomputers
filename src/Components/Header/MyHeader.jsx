@@ -12,9 +12,22 @@ import MyLogo from "./MyLogo";
 // import MyLogo from "./MyLogo";
 
 const MyHeader = () => {
+  const phoneNumber = "3392024442";
+  const Callme = "tel:3392024442";
+  const message = "Ciao! Mi piacerebbe sapere di più sui servizi che offri";
+  const whatsapp = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+  const email = "fpcompsas@gmail.com";
+  const subjectMail = "Richiesta Informazioni";
+  const bodyMail = "Ciao! Mi piacerebbe sapere di più sui servizi che offri";
+  const mailtoFP = `mailto:${email}?subject=${encodeURIComponent(
+    subjectMail
+  )}&body=${encodeURIComponent(bodyMail)}`;
+  //
   return (
     <>
-      <Navbar expand="lg" className="bg-white shadow-lg-white">
+      <Navbar expand="lg" className="bg-white shadow-lg-gray mb-3">
         <Container>
           <Navbar.Brand href="#home">
             <MyLogo />
@@ -26,24 +39,49 @@ const MyHeader = () => {
               <Nav.Link>Servizi</Nav.Link>
 
               <NavDropdown title="Info & Contatti" id="basic-nav-dropdown">
-                <NavDropdown.Item className="d-flex justify-content-center align-items-center">
-                  <Whatsapp />
-                </NavDropdown.Item>
+                <span className="d-flex justify-content-center align-items-center">
+                  <a
+                    href={whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-black"
+                  >
+                    <Whatsapp />
+                  </a>{" "}
+                </span>
                 <NavDropdown.Divider />
-                <NavDropdown.Item className="d-flex justify-content-center align-items-center">
-                  <TelephoneFill />
-                </NavDropdown.Item>
+                <span className="d-flex justify-content-center align-items-center">
+                  <a
+                    href={Callme}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-black"
+                  >
+                    <TelephoneFill />
+                  </a>
+                </span>
                 <NavDropdown.Divider />
-                <NavDropdown.Item className="d-flex justify-content-center align-items-center">
-                  <EnvelopeAtFill />
-                </NavDropdown.Item>
+                <span className="d-flex justify-content-center align-items-center">
+                  <a
+                    href={Callme}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-black"
+                  >
+                    <EnvelopeAtFill />
+                  </a>
+                </span>
                 <NavDropdown.Divider />
-                <NavDropdown.Item
-                  href="#action/3.1"
-                  className="d-flex justify-content-center align-items-center"
-                >
-                  <PinMapFill />
-                </NavDropdown.Item>
+                <span className="d-flex justify-content-center align-items-center">
+                  <a
+                    href="https://www.google.com/maps/dir//Via+Vittorio+Emanuele,+304,+80079+Procida+NA/@40.757176,13.936367,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x133b135b5260a181:0x325bb46e1f89b84c!2m2!1d14.018748!2d40.7572153?entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-black"
+                  >
+                    <PinMapFill />
+                  </a>
+                </span>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
