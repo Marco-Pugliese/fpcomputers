@@ -6,8 +6,8 @@ import "./App.css";
 function App() {
   return (
     <>
+      <MyHeader />
       <div className="bg-secondary">
-        <MyHeader />
         <Container>
           <LandingPage />
         </Container>

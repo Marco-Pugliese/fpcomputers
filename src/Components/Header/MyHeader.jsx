@@ -27,7 +27,7 @@ const MyHeader = () => {
   //
   return (
     <>
-      <Navbar expand="lg" className="bg-white shadow-lg-gray mb-3">
+      <Navbar expand="lg" className="bg-white shadow-lg-gray" id="myHeader">
         <Container>
           <Navbar.Brand href="#home">
             <MyLogo />
