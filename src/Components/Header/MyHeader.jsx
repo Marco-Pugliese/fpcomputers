@@ -9,10 +9,11 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import MyLogo from "./MyLogo";
+
 const MyHeader = () => {
   return (
     <>
-      <Navbar expand="lg" className="bg-white">
+      <Navbar expand="lg" className="bg-white shadow-lg-white">
         <Container>
           <Navbar.Brand href="#home">
             <MyLogo />
