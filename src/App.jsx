@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <MyHeader />
-      <div className="bg-dark text-light">
+      <div className="text-light bg-dark">
         <Container>
           <LandingPage />
         </Container>

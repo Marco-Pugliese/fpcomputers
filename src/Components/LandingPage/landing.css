@@ -3,3 +3,43 @@
   padding-top: 2vh;
   padding-bottom: 2vh;
 }
+.carousel-indicators,
+.carousel-indicators *,
+.carousel-control-prev,
+.carousel-control-next {
+  display: none !important;
+}
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.bg-purple {
+  transition: all 0.8s;
+  background: #981eb5 !important;
+}
+.bg-purple > a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.bg-purple:hover {
+  scale: 1.1;
+  cursor: pointer;
+  transition: all 0.8s;
+}

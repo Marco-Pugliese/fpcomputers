@@ -1,5 +1,4 @@
 import { Col, Row } from "react-bootstrap";
-import MyLogo from "../Header/MyLogo";
 
 const MyFooter = () => {
   return (
@@ -9,12 +8,7 @@ const MyFooter = () => {
           <Row className="d-flex flex-column">
             <Col>FP Computers</Col>
             <Col>Via Vittorio Emanuele, Procida, (Na), 80079 </Col>
-            <Col>
-              P.Iva Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Nihil reprehenderit tempora explicabo soluta deserunt suscipit
-              odio, in mollitia quidem at, illum minima libero neque? Quasi
-              dolore tenetur quidem nemo et.
-            </Col>
+            <Col>P.Iva 000001111112222222333333</Col>
           </Row>
         </Col>
         <Col>
