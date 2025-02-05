@@ -7,15 +7,15 @@ const LandingPage = () => {
       className="d-flex align-items-center flex-column justify-content-center"
     >
       <Row className="text-center justify-content-center fs-4 mt-4 ">
-        <Col className="mt-5 bg-dark text-light text-shadow rounded-5 shadow-white-lg px-2 py-5">
-          <Carousel fade className="w-100">
-            <Carousel.Item className="w-100">
+        <Col className="mt-5 col-10 bg-dark text-light text-shadow rounded-5 shadow-white-lg px-2 py-5">
+          <Carousel fade>
+            <Carousel.Item>
               <div className="p-4 fs-4">Benvenuto su</div>
               <div className="fs-1 slide-in-top p-4 words-cng">
                 FP Computers
               </div>
             </Carousel.Item>
-            <Carousel.Item className="w-100">
+            <Carousel.Item>
               <div className="p-4">
                 Sei stato contattato e stai ricevendo assistenza?
               </div>
@@ -28,7 +28,7 @@ const LandingPage = () => {
                 </a>
               </div>
             </Carousel.Item>
-            <Carousel.Item className="w-100">
+            <Carousel.Item>
               <div className="p-4">
                 Vuoi contattarci per richiedere assistenza?
               </div>
