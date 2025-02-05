@@ -19,8 +19,11 @@ const LandingPage = () => {
               <div className="p-4">
                 Sei stato contattato e stai ricevendo assistenza?
               </div>
-              <div className="bg-purple btn mx-2 my-4 p-2 fs-5 slide-in-top shadow-btn notxt-shdw">
-                <a href="https://www.supremocontrol.com/download.aspx?file=Supremo.exe&id_sw=7&ws=supremocontrol.com">
+              <div className="bg-purple btn mx-2 p-2 my-4 fs-5 slide-in-top shadow-btn notxt-shdw">
+                <a
+                  className="d-block py-1 px-2"
+                  href="https://www.supremocontrol.com/download.aspx?file=Supremo.exe&id_sw=7&ws=supremocontrol.com"
+                >
                   Clicca qui!
                 </a>
               </div>
@@ -30,7 +33,7 @@ const LandingPage = () => {
                 Vuoi contattarci per richiedere assistenza?
               </div>
               <div className="bg-purple btn mx-2 my-4 p-2 fs-5 slide-in-top shadow-btn notxt-shdw">
-                <a className="text-light">Clicca qui!</a>
+                <a className="d-block py-1 px-2">Contattaci!</a>
               </div>
             </Carousel.Item>
           </Carousel>
