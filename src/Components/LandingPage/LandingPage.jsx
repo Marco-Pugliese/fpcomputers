@@ -7,7 +7,7 @@ const LandingPage = () => {
       className="d-flex align-items-center flex-column justify-content-center"
     >
       <Row className="text-center justify-content-center fs-4 mt-4 ">
-        <Col className="mt-5 bg-dark text-light text-shadow rounded-3 shadow-white-lg px-2 py-5">
+        <Col className="mt-5 bg-dark text-light text-shadow rounded-5 shadow-white-lg px-2 py-5">
           <Carousel fade className="w-100">
             <Carousel.Item className="w-100">
               <div className="p-4 fs-4">Benvenuto su</div>
