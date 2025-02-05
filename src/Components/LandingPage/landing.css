@@ -1,5 +1,5 @@
 #landingPage {
-  min-height: 80vh;
+  min-height: 79vh;
   padding-top: 2vh;
   padding-bottom: 2vh;
 }
@@ -31,7 +31,7 @@
   }
 }
 .bg-purple {
-  transition: all 0.8s;
+  transition: all 0.9s;
   background: #981eb5 !important;
 }
 .bg-purple > a {
@@ -42,4 +42,35 @@
   scale: 1.1;
   cursor: pointer;
   transition: all 0.8s;
+}
+.text-shadow {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.notxt-shdw {
+  text-shadow: none !important;
+}
+.shadow-btn {
+  box-shadow: 0 -5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.9s;
+}
+.shadow-btn:hover {
+  scale: 1.1;
+  cursor: pointer;
+  box-shadow: 0 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background: #338dc9 !important;
+}
+.words-cng {
+  animation: clr-cng 1.5s alternate-reverse infinite !important;
+}
+
+@keyframes clr-cng {
+  0% {
+    color: black;
+  }
+  33% {
+    color: #981eb5;
+  }
+  66% {
+    color: #338dc9;
+  }
 }
