@@ -1,7 +1,19 @@
-#landingPage {
-  min-height: 79vh;
+#landingPageContainer {
+  min-height: 79.3vh;
   padding-top: 2vh;
   padding-bottom: 2vh;
+  background: url(./assets/img/logo1.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+#landingPage {
+  min-height: 79vh;
+  background: rgba(17, 4, 19, 0.85);
+  transition: all 0.9s;
+}
+#landingPage:hover {
+  background: rgba(17, 4, 19, 0.96);
 }
 .carousel-indicators,
 .carousel-indicators *,
@@ -43,35 +55,38 @@
   cursor: pointer;
   transition: all 0.8s;
 }
-.text-shadow {
+.text-shadow-wht {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .notxt-shdw {
   text-shadow: none !important;
 }
 .shadow-btn {
-  box-shadow: 0 -5px 5px 10px rgba(222, 92, 255, 0.3);
   transition: all 0.9s;
+  box-shadow: 0 -5px 15px 10px rgba(222, 92, 255, 0.3);
 }
 .shadow-btn:hover {
   scale: 1.1;
   cursor: pointer;
-  box-shadow: 0 5px 5px 10px rgba(110, 195, 252, 0.3);
+  box-shadow: 0 5px 15px 10px rgba(110, 195, 252, 0.3);
   background: #338dc9 !important;
 }
 .words-cng {
-  animation: clr-cng 1.5s alternate-reverse infinite !important;
+  animation: clr-cng 2.5s alternate-reverse infinite !important;
 }
 
 @keyframes clr-cng {
   0% {
-    color: black;
+    color: indianred;
   }
-  33% {
+  33.3% {
     color: #981eb5;
   }
-  66% {
+  66.6% {
     color: #338dc9;
+  }
+  100% {
+    color: rgb(23, 41, 19);
   }
 }
 .shadow-white-lg {

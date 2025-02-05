@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap";
 import MyHeader from "./Components/Header/MyHeader";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import "./App.css";
@@ -9,9 +8,7 @@ function App() {
     <>
       <MyHeader />
       <div className="text-light bg-dark">
-        <Container>
-          <LandingPage />
-        </Container>
+        <LandingPage />
       </div>
       <MyFooter />
     </>
