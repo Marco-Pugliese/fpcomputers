@@ -32,7 +32,7 @@ const MyHeader = () => {
   const removesetHomeTrue = () => {
     setTimeout(() => {
       setHomeHover(false);
-    }, 5000);
+    }, 10000);
   };
   return (
     <>
@@ -52,16 +52,24 @@ const MyHeader = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto me-4">
               {homeHover === true ? (
-                <div className="text-center nav-link fw-bold hov h50px">
-                  {" "}
+                <Link
+                  to={"/Support"}
+                  className="nav-link fw-bold hov d-flex align-items-center justify-content-center h100"
+                >
                   Richiedi Assistenza
-                </div>
+                </Link>
               ) : (
-                <div className="text-center nav-link hov transparent">
+                <Link
+                  to={"/Support"}
+                  className="nav-link fw-bold hov d-flex align-items-center justify-content-center makeItDisappear"
+                >
                   Richiedi Assistenza
-                </div>
+                </Link>
               )}
-              <Link to={"/"} className="nav-link text-center hov">
+              <Link
+                to={"/"}
+                className="nav-link hov d-flex align-items-center justify-content-center"
+              >
                 Home
               </Link>{" "}
               <NavDropdown
@@ -113,7 +121,10 @@ const MyHeader = () => {
                   </a>
                 </span>
               </NavDropdown>
-              <Link to={"/Services"} className="nav-link text-center hov">
+              <Link
+                to={"/Services"}
+                className="nav-link justify-content-center d-flex align-items-center hov"
+              >
                 Servizi
               </Link>
             </Nav>
