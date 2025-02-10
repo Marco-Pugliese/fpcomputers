@@ -1,6 +1,11 @@
 import { Carousel, Col, Row } from "react-bootstrap";
 
 const LandingPage = () => {
+  const phoneNumber = "3392024442";
+  const message = "Ciao! Mi piacerebbe sapere di più sui servizi che offri";
+  const whatsapp = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
   return (
     <div id="landingPageContainer" className="m-0 p-0">
       <div
@@ -30,11 +35,24 @@ const LandingPage = () => {
                 </div>
               </Carousel.Item>
               <Carousel.Item>
+                <div className="p-4 fs-2">Benvenuto su</div>
+                <div className="display-3 p-4 words-cng mx-2 p-2 my-4 fw-bold notxt-shdw">
+                  FP Computers
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
                 <div className="p-4">
                   Vuoi contattarci per richiedere assistenza?
                 </div>
                 <div className="bg-purple btn rounded-4 mx-2 my-4 p-2 fs-4 shadow-btn notxt-shdw">
-                  <a className="d-block py-1 px-2">Contattaci!</a>
+                  <a
+                    className="d-block py-1 px-2 text-black"
+                    href={whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Contattaci!
+                  </a>
                 </div>
               </Carousel.Item>
             </Carousel>
