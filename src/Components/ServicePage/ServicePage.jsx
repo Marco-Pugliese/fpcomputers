@@ -11,7 +11,7 @@ const ServicePage = () => {
     <div id="ServicePage">
       <Container>
         <Row
-          className="d-flex align-items-center border shad-wht bg-sm-1"
+          className="d-flex align-items-center border shad-wht bg-sm-1 position-relative"
           onClick={() => {
             isVenditaClicked(!vendita);
           }}
