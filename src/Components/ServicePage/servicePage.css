@@ -1,3 +1,83 @@
 #ServicePage {
   min-height: 79.3vh;
+  padding-bottom: 150px;
+  padding-top: 50px;
+}
+.h-30vh {
+  min-height: 40vh;
+}
+.spacing1 {
+  letter-spacing: 0.15em;
+  text-align: end;
+}
+.bg1 {
+  background: url("./assets/img/sales.webp");
+  background-size: cover;
+  background-position: center;
+}
+.bg2 {
+  background: url("./assets/img/assistenza.webp");
+  background-size: cover;
+  background-position: center;
+}
+.bg3 {
+  background: url("./assets/img/azienda.webp");
+  background-size: cover;
+  background-position: center;
+}
+.bg4 {
+  background: url("./assets/img/logo2.webp");
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 992px) {
+  .bg-sm-1 {
+    background: url("./assets/img/sales.webp");
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-sm-2 {
+    background: url("./assets/img/assistenza.webp");
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-sm-3 {
+    background: url("./assets/img/azienda.webp");
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-sm-4 {
+    background: url("./assets/img/logo2.webp");
+    background-size: cover;
+    background-position: center;
+  }
+  .darker-sm {
+    background: #000000d4;
+    transition: all 0.6s;
+  }
+  .darker-sm:hover {
+    background: #000000ec;
+  }
+}
+
+.bg1,
+.bg2,
+.bg3,
+.bg4,
+.bg-sm-1,
+.bg-sm-2,
+.bg-sm-3,
+.bg-sm-4 {
+  transition: all 0.9s;
+}
+
+.shad-wht {
+  box-shadow: 0 0 30px 1px rgba(191, 191, 191, 0.183);
+}
+.scale-on-hover:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.scale-on-hover {
+  transition: all 0.9s;
 }
