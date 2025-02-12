@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import {
   EnvelopeAtFill,
-  PhoneVibrateFill,
   PinMapFill,
   TelephoneFill,
   Whatsapp,
@@ -21,11 +20,7 @@ const SupportPage = () => {
     >
       <Row className="py-4">
         <Col
-          className={
-            mailHovered === true
-              ? "bg-info col-2 text-end rounded-end-1 py-2 iconDark"
-              : "bg-info col-2 text-end py-2 iconDark"
-          }
+          className="bg-info col-2 text-end  py-2 iconDark"
           onMouseEnter={() => {
             setMailHovered(true);
           }}
@@ -38,20 +33,22 @@ const SupportPage = () => {
         <Col
           className={
             mailHovered === true
-              ? "col-10 text-center rounded-end-1 text-light bg-info transition scale11 py-2"
+              ? "col-8 text-center rounded-end-2 text-light bg-info transition scale11 py-2 text-dark "
               : "col-1 text-center rounded-end-4 transparent bg-info transition py-2"
           }
+          onMouseEnter={() => {
+            setMailHovered(true);
+          }}
+          onMouseLeave={() => {
+            setMailHovered(false);
+          }}
         >
           fpcompsas@gmail.com
         </Col>
       </Row>
       <Row className="py-4">
         <Col
-          className={
-            phone1Hovered === true
-              ? "bg-info col-2 text-end rounded-end-1 py-2 iconDark"
-              : "bg-info col-2 text-end py-2 iconDark"
-          }
+          className="bg-info col-2 text-end  py-2 iconDark"
           onMouseEnter={() => {
             setphone1Hovered(true);
           }}
@@ -62,9 +59,15 @@ const SupportPage = () => {
           <TelephoneFill />
         </Col>
         <Col
+          onMouseEnter={() => {
+            setphone1Hovered(true);
+          }}
+          onMouseLeave={() => {
+            setphone1Hovered(false);
+          }}
           className={
             phone1Hovered === true
-              ? "col-10 text-center rounded-end-1 text-light bg-info transition scale11 py-2"
+              ? "col-8 text-center rounded-end-2 text-light bg-info transition scale11 py-2 text-dark "
               : "col-1 text-center rounded-end-4 transparent bg-info transition py-2"
           }
         >
@@ -73,11 +76,7 @@ const SupportPage = () => {
       </Row>{" "}
       <Row className="py-4">
         <Col
-          className={
-            whatsappHovered === true
-              ? "bg-info col-2 text-end rounded-end-1 py-2 iconDark"
-              : "bg-info col-2 text-end py-2 iconDark"
-          }
+          className="bg-info col-2 text-end  py-2 iconDark"
           onMouseEnter={() => {
             setwhatsappHovered(true);
           }}
@@ -88,9 +87,15 @@ const SupportPage = () => {
           <Whatsapp />
         </Col>
         <Col
+          onMouseEnter={() => {
+            setwhatsappHovered(true);
+          }}
+          onMouseLeave={() => {
+            setwhatsappHovered(false);
+          }}
           className={
             whatsappHovered === true
-              ? "col-10 text-center rounded-end-1 text-light bg-info transition scale11 py-2"
+              ? "col-8 text-center rounded-end-2 text-light bg-info transition scale11 py-2 text-dark "
               : "col-1 text-center rounded-end-4 transparent bg-info transition py-2"
           }
         >
@@ -99,11 +104,7 @@ const SupportPage = () => {
       </Row>{" "}
       <Row className="py-4">
         <Col
-          className={
-            mapHovered === true
-              ? "bg-info col-2 text-end rounded-end-1 py-2 iconDark"
-              : "bg-info col-2 text-end py-2 iconDark"
-          }
+          className="bg-info col-2 text-end  py-2 iconDark"
           onMouseEnter={() => {
             setssmapHovered(true);
           }}
@@ -116,7 +117,7 @@ const SupportPage = () => {
         <Col
           className={
             mapHovered === true
-              ? "col-10 text-center rounded-end-1 text-light bg-info transition scale11 py-2"
+              ? "col-8 text-center rounded-end-2 text-light bg-info transition scale11 py-2 text-dark "
               : "col-1 text-center rounded-end-4 transparent bg-info transition py-2"
           }
         >

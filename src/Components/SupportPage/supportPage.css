@@ -6,11 +6,9 @@
   transition: all 0.9s;
 }
 .iconDark:hover {
-  scale: 1.1;
   cursor: pointer;
 }
 .scale11 {
-  transform: scaleY(1.1);
   font-size: 0.9em;
 }
 .transition {
