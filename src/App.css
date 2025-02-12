@@ -3,6 +3,7 @@
 @import url("./Components/LandingPage/landing.css");
 @import url("./Components/Footer/myFooter.css");
 @import url("./Components/ServicePage/servicePage.css");
+@import url("./Components/SupportPage/supportPage.css");
 body {
   overflow-x: hidden;
 }
