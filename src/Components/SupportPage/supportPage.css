@@ -1,5 +1,6 @@
 #supportPage {
   min-height: 80vh;
+  background: white;
 }
 .iconDark {
   color: black;
@@ -13,4 +14,7 @@
 }
 .transition {
   transition: 0.9s;
+}
+.bg-purple2 {
+  background: rgb(118, 15, 118);
 }

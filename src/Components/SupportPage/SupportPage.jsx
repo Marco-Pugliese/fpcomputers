@@ -20,7 +20,7 @@ const SupportPage = () => {
     >
       <Row className="py-4">
         <Col
-          className="bg-info col-2 text-end  py-2 iconDark"
+          className="bg-primary col-2 text-end  py-2 text-light"
           onMouseEnter={() => {
             setMailHovered(true);
           }}
@@ -33,8 +33,8 @@ const SupportPage = () => {
         <Col
           className={
             mailHovered === true
-              ? "col-8 text-center rounded-end-2 text-light bg-info transition scale11 py-2 text-dark "
-              : "col-1 text-center rounded-end-4 transparent bg-info transition py-2"
+              ? "col-8 text-center rounded-end-2 text-light bg-primary transition scale11 py-2 text-light "
+              : "col-1 text-center rounded-end-4 transparent bg-primary transition py-2"
           }
           onMouseEnter={() => {
             setMailHovered(true);
@@ -48,7 +48,11 @@ const SupportPage = () => {
       </Row>
       <Row className="py-4">
         <Col
-          className="bg-info col-2 text-end  py-2 iconDark"
+          className={
+            phone1Hovered === true
+              ? "bg-purple2 col-2 text-end py-2 text-light"
+              : "bg-purple2 col-2 text-end py-2 iconDark"
+          }
           onMouseEnter={() => {
             setphone1Hovered(true);
           }}
@@ -67,8 +71,8 @@ const SupportPage = () => {
           }}
           className={
             phone1Hovered === true
-              ? "col-8 text-center rounded-end-2 text-light bg-info transition scale11 py-2 text-dark "
-              : "col-1 text-center rounded-end-4 transparent bg-info transition py-2"
+              ? "col-8 text-center rounded-end-2 text-light bg-purple2 transition scale11  py-2 "
+              : "col-1 text-center rounded-end-4 transparent bg-purple2 transition py-2 "
           }
         >
           081 896 9373
@@ -76,7 +80,11 @@ const SupportPage = () => {
       </Row>{" "}
       <Row className="py-4">
         <Col
-          className="bg-info col-2 text-end  py-2 iconDark"
+          className={
+            whatsappHovered === true
+              ? "bg-info col-2 text-end  py-2 text-dark"
+              : "bg-info col-2 text-end  py-2 text-light"
+          }
           onMouseEnter={() => {
             setwhatsappHovered(true);
           }}
@@ -104,7 +112,7 @@ const SupportPage = () => {
       </Row>{" "}
       <Row className="py-4">
         <Col
-          className="bg-info col-2 text-end  py-2 iconDark"
+          className="bg-dark col-2 text-end py-2 text-light"
           onMouseEnter={() => {
             setssmapHovered(true);
           }}
@@ -115,10 +123,16 @@ const SupportPage = () => {
           <PinMapFill />
         </Col>
         <Col
+          onMouseEnter={() => {
+            setssmapHovered(true);
+          }}
+          onMouseLeave={() => {
+            setssmapHovered(false);
+          }}
           className={
             mapHovered === true
-              ? "col-8 text-center rounded-end-2 text-light bg-info transition scale11 py-2 text-dark "
-              : "col-1 text-center rounded-end-4 transparent bg-info transition py-2"
+              ? "col-8 text-center rounded-end-2 text-light bg-dark transition scale11 py-2 text-light "
+              : "col-1 text-center rounded-end-4 transparent bg-dark transition py-2"
           }
         >
           Via V.Emanuele, 303 - Procida (Na) - 80079
