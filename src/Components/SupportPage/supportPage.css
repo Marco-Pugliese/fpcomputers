@@ -18,3 +18,89 @@
 .bg-purple2 {
   background: rgb(118, 15, 118);
 }
+.wobble-hor-bottom {
+  animation: wobble-hor-bottom 0.9s infinite both;
+}
+
+@keyframes wobble-hor-bottom {
+  0% {
+    transform: translateY(0px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-2px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-1.25px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+.wobbleback {
+  animation: wobbleback 0.9s both 1;
+}
+@keyframes wobbleback {
+  0% {
+    transform: translate(0px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translate(-8px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translate(-4px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translate(-2px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translate(-1.25px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translate(0);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+.pointerHover:hover {
+  cursor: pointer;
+}
