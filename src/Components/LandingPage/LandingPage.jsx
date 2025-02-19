@@ -6,6 +6,7 @@ const LandingPage = () => {
   const whatsapp = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
+
   return (
     <div id="landingPageContainer" className="m-0 p-0">
       <div
@@ -14,14 +15,14 @@ const LandingPage = () => {
       >
         <Row className="text-center fs-4 text-shadow-wht">
           <Col className="col-12 ">
-            <Carousel>
-              <Carousel.Item>
+            <Carousel interval={6000} pause={false}>
+              <Carousel.Item interval={3000}>
                 <div className="p-4 fs-2">Benvenuto su</div>
                 <div className="display-3 p-4 words-cng mx-2 p-2 my-4 fw-bold notxt-shdw">
                   FP Computers
                 </div>
               </Carousel.Item>
-              <Carousel.Item>
+              <Carousel.Item interval={12000}>
                 <div className="p-4">
                   Sei stato contattato e stai ricevendo assistenza?
                 </div>
@@ -34,13 +35,13 @@ const LandingPage = () => {
                   </a>
                 </div>
               </Carousel.Item>
-              <Carousel.Item>
+              <Carousel.Item interval={3000}>
                 <div className="p-4 fs-2">Benvenuto su</div>
                 <div className="display-3 p-4 words-cng mx-2 p-2 my-4 fw-bold notxt-shdw">
                   FP Computers
                 </div>
               </Carousel.Item>
-              <Carousel.Item>
+              <Carousel.Item interval={6000}>
                 <div className="p-4">
                   Vuoi contattarci per richiedere assistenza?
                 </div>
