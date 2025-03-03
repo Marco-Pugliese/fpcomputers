@@ -2,7 +2,7 @@
   min-height: 79.3vh;
   padding-top: 2vh;
   padding-bottom: 2vh;
-  background: url(./assets/img/logo1.webp);
+  background: url("../../../public/assets/img/logo1.webp");
   background-position: center;
   background-size: cover;
 }
