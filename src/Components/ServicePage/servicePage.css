@@ -11,43 +11,44 @@
   text-align: end;
 }
 .bg1 {
-  background: url("./assets/img/sales.webp");
+  background: url("../../../public/assets/andreapugliese/piatti/piatto4.jpg");
+  background: url("../../../public/assets/img/sales.webp");
   background-size: cover;
   background-position: center;
 }
 .bg2 {
-  background: url("./assets/img/assistenza.webp");
+  background: url("../../../public/assets/img/assistenza.webp");
   background-size: cover;
   background-position: center;
 }
 .bg3 {
-  background: url("./assets/img/azienda.webp");
+  background: url("../../../public/assets/img/azienda.webp");
   background-size: cover;
   background-position: center;
 }
 .bg4 {
-  background: url("./assets/img/logo2.webp");
+  background: url("../../../public/assets/img/logo2.webp");
   background-size: cover;
   background-position: center;
 }
 @media screen and (max-width: 992px) {
   .bg-sm-1 {
-    background: url("./assets/img/sales.webp");
+    background: url("../../../public/assets/img/sales.webp");
     background-size: cover;
     background-position: center;
   }
   .bg-sm-2 {
-    background: url("./assets/img/assistenza.webp");
+    background: url("../../../public/assets/img/assistenza.webp");
     background-size: cover;
     background-position: center;
   }
   .bg-sm-3 {
-    background: url("./assets/img/azienda.webp");
+    background: url("../../../public/assets/img/azienda.webp");
     background-size: cover;
     background-position: center;
   }
   .bg-sm-4 {
-    background: url("./assets/img/logo2.webp");
+    background: url("../../../public/assets/img/logo2.webp");
     background-size: cover;
     background-position: center;
   }
