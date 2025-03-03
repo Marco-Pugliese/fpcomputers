@@ -4,7 +4,7 @@ import { HeartFill } from "react-bootstrap-icons";
 const MyFooter = () => {
   return (
     <div id="myFooter" className="p-0 m-0 ">
-      <div id="myFooterInner" className="minhfoot py-2">
+      <div id="myFooterInner" className="minhfoot py-3">
         <Row>
           <Col className="col-12">
             <Row className="d-flex text-center flex-column">

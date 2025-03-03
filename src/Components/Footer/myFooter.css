@@ -1,5 +1,5 @@
 #myFooter {
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   background: #338dc9;
   background: url(./assets/img/logo3.webp);
   background-size: contain;
@@ -10,7 +10,7 @@
 }
 #myFooterInner {
   width: 100vw;
-  background: rgba(0, 0, 0, 0.93);
+  background: rgba(0, 0, 0, 0.99);
   color: aliceblue;
 }
 #myFooterInner:hover {

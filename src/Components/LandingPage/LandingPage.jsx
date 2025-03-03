@@ -11,7 +11,7 @@ const LandingPage = () => {
     <div id="landingPageContainer" className="m-0 p-0">
       <div
         id="landingPage"
-        className="d-flex align-items-center flex-column justify-content-center"
+        className="d-flex align-items-center flex-column justify-content-center "
       >
         <Row className="text-center fs-4 text-shadow-wht">
           <Col className="col-12 ">
